@@ -23,13 +23,13 @@ function Carousel() {
 
     return(
     <>
-    <div className="carousel-container flex" onClick={handlePrev}>
+    <div className="carousel-container flex" >
 
-        <div className="leftArrow arrowDiv flex" onClick={handleNext}>
+        <div className="leftArrow arrowDiv flex" onClick={handlePrev} >
             <ArrowBackIosIcon/>
         </div>
 
-        <div className="rightArrow arrowDiv flex">
+        <div className="rightArrow arrowDiv flex" onClick={handleNext}>
             <ArrowForwardIosIcon/>
         </div>
 
